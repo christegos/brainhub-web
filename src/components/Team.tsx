@@ -7,62 +7,111 @@ import devImage from "@/assets/team-dev.jpg";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Dimitriou",
-      role: "CEO & Co-Founder",
-      image: ceoCeoImage,
-      bio: "Former maritime industry executive with 15+ years of experience in shipping and logistics. Expert in blockchain technology and digital transformation.",
-      expertise: ["Maritime Operations", "Blockchain Strategy", "Business Development"],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "alex@brainhub.cy"
-      }
+      name: "Alex Chen",
+      role: "Founder & CEO",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      bio: "Former Google AI researcher with 10+ years in machine learning. Passionate about building the future of decentralized AI.",
+      expertise: ["AI Research", "Blockchain Strategy", "Leadership"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "alex@brainhub.ltd"
+              }
     },
     {
-      name: "Maria Constantinou",
-      role: "CTO & Co-Founder", 
-      image: ctoImage,
-      bio: "Blockchain architect and smart contract specialist. Previously led development teams at major fintech companies across Europe.",
-      expertise: ["Smart Contracts", "System Architecture", "Cybersecurity"],
-      social: {
-        linkedin: "#",
-        twitter: "#", 
-        email: "maria@brainhub.cy"
-      }
+      name: "Sarah Kim",
+      role: "CTO", 
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      bio: "Blockchain architect with expertise in Ethereum, Solana, and AI integration. Led development at multiple DeFi protocols.",
+      expertise: ["Blockchain Architecture", "Smart Contracts", "AI Integration"],
+              social: {
+                linkedin: "#",
+                twitter: "#", 
+                email: "sarah@brainhub.ltd"
+              }
     },
     {
-      name: "Nikos Stavrou",
+      name: "Marcus Rodriguez",
+      role: "Head of AI",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      bio: "AI researcher specializing in neural networks and autonomous systems. PhD in Computer Science from Stanford.",
+      expertise: ["Machine Learning", "Neural Networks", "Autonomous Systems"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "marcus@brainhub.ltd"
+              }
+    },
+    {
+      name: "Emma Thompson",
       role: "Lead Developer",
-      image: devImage,
-      bio: "Full-stack developer with expertise in blockchain protocols and web3 technologies. Passionate about creating user-friendly verification systems.",
-      expertise: ["Web3 Development", "Frontend Engineering", "API Design"],
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        email: "nikos@brainhub.cy"
-      }
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      bio: "Full-stack developer with expertise in Web3 technologies and AI model deployment. Built scalable dApps for major protocols.",
+      expertise: ["Web3 Development", "AI Deployment", "Full-Stack"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "emma@brainhub.ltd"
+              }
+    },
+    {
+      name: "David Park",
+      role: "Blockchain Engineer",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+      bio: "Smart contract specialist with deep knowledge of DeFi protocols and cross-chain interoperability solutions.",
+      expertise: ["Smart Contracts", "DeFi", "Cross-Chain"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "david@brainhub.ltd"
+              }
+    },
+    {
+      name: "Lisa Wang",
+      role: "AI Research Scientist",
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
+      bio: "Research scientist focused on AI agent development and blockchain consensus mechanisms. Published in top-tier AI conferences.",
+      expertise: ["AI Agents", "Consensus Mechanisms", "Research"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "lisa@brainhub.ltd"
+              }
+    },
+    {
+      name: "James Wilson",
+      role: "Product Manager",
+      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face",
+      bio: "Product strategist with experience in fintech and Web3. Bridges the gap between complex technology and user experience.",
+      expertise: ["Product Strategy", "Web3 UX", "Fintech"],
+              social: {
+                linkedin: "#",
+                twitter: "#",
+                email: "james@brainhub.ltd"
+              }
     }
   ];
 
   return (
     <section id="team" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Meet the Team Behind
-            <span className="gradient-primary bg-clip-text text-transparent"> Brainhub</span>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Meet the
+            <span className="gradient-primary bg-clip-text text-transparent"> Team</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Our diverse team combines deep maritime industry knowledge with cutting-edge 
-            blockchain expertise to deliver trusted solutions.
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Our world-class team combines cutting-edge AI research with deep blockchain expertise 
+            to build the future of decentralized technology.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="overflow-x-auto pb-4 team-scroll">
+          <div className="flex gap-8 min-w-max px-4">
           {teamMembers.map((member, index) => (
             <div 
               key={index}
-              className="bg-card rounded-xl overflow-hidden shadow-soft hover-lift group"
+              className="bg-card rounded-xl overflow-hidden shadow-soft hover-lift group w-80 flex-shrink-0"
             >
               {/* Profile Image */}
               <div className="relative overflow-hidden">
@@ -117,6 +166,7 @@ const Team = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Company Culture */}
@@ -133,7 +183,7 @@ const Team = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">2019</div>
+                <div className="text-3xl font-bold text-primary mb-2">2024</div>
                 <div className="text-muted-foreground">Company Founded</div>
               </div>
               <div>
@@ -141,8 +191,8 @@ const Team = () => {
                 <div className="text-muted-foreground">Headquarters</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                <div className="text-muted-foreground">Team Members</div>
+                <div className="text-3xl font-bold text-primary mb-2">7+</div>
+                <div className="text-muted-foreground">Global Team</div>
               </div>
             </div>
           </div>

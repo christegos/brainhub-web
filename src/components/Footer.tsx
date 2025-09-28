@@ -6,16 +6,16 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { label: "About Us", href: "#team" },
-      { label: "Careers", href: "#" },
-      { label: "News", href: "#" },
+      { label: "About Us", href: "#about" },
+      { label: "Our Work", href: "#work" },
+      { label: "Team", href: "#team" },
       { label: "Contact", href: "#contact" }
     ],
     solutions: [
-      { label: "Maritime Certificates", href: "#use-cases" },
-      { label: "Supply Chain", href: "#use-cases" },
-      { label: "Academic Credentials", href: "#use-cases" },
-      { label: "Legal Documents", href: "#use-cases" }
+      { label: "AI Agents", href: "#work" },
+      { label: "Smart Contracts", href: "#work" },
+      { label: "DeFi Protocols", href: "#work" },
+      { label: "Web3 Infrastructure", href: "#work" }
     ],
     resources: [
       { label: "Documentation", href: "#" },
@@ -52,23 +52,19 @@ const Footer = () => {
                 Brainhub
               </div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-                Securing the digital world with blockchain-powered verification solutions. 
-                Built in Cyprus, trusted globally.
+                Building the future of AI and blockchain technology. 
+                Cyprus-based company with global remote team, serving clients worldwide.
               </p>
               
               {/* Contact Info */}
               <div className="space-y-3 text-sm">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-secondary" />
-                  <span>hello@brainhub.cy</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-4 w-4 text-secondary" />
-                  <span>+357 25 123 456</span>
+                  <span>hello@brainhub.ltd</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-4 w-4 text-secondary" />
-                  <span>Limassol, Cyprus</span>
+                  <span>Cyprus • Global Remote</span>
                 </div>
               </div>
             </div>
@@ -148,7 +144,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-sm text-primary-foreground/60">
-              © {currentYear} Brainhub Ltd. All rights reserved. Company registered in Cyprus.
+              © {currentYear} Brainhub. All rights reserved.
             </div>
 
             {/* Social Links */}

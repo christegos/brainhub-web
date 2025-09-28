@@ -1,11 +1,10 @@
+import React from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import Problem from "@/components/Problem";
-import Solution from "@/components/Solution";
-import Features from "@/components/Features";
-import UseCases from "@/components/UseCases";
+import About from "@/components/About";
+import OurWork from "@/components/OurWork";
+import Values from "@/components/Values";
 import Team from "@/components/Team";
-import Trust from "@/components/Trust";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -14,12 +13,10 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <Problem />
-      <Solution />
-      <Features />
-      <UseCases />
+      <About />
+      <OurWork />
+      <Values />
       <Team />
-      <Trust />
       <Contact />
       <Footer />
     </div>

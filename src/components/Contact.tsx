@@ -48,19 +48,13 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: "hello@brainhub.cy",
-      action: "mailto:hello@brainhub.cy"
-    },
-    {
-      icon: <Phone className="h-6 w-6" />,
-      title: "Phone",
-      details: "+357 25 123 456",
-      action: "tel:+35725123456"
+      details: "hello@brainhub.ltd",
+      action: "mailto:hello@brainhub.ltd"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
-      title: "Address",
-      details: "28 Oktovriou Avenue, Limassol 3035, Cyprus",
+      title: "Location",
+      details: "Cyprus • Global Remote",
       action: "https://maps.google.com"
     }
   ];
@@ -68,14 +62,14 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Let's Build
-            <span className="gradient-primary bg-clip-text text-transparent"> Together</span>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Get in
+            <span className="gradient-primary bg-clip-text text-transparent"> Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Ready to start your next project? We'd love to hear about your ideas 
-            and explore how we can help bring them to life.
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Ready to build the future of AI and blockchain? 
+            Let's discuss how we can work together to create groundbreaking decentralized solutions.
           </p>
         </div>
 
@@ -167,9 +161,9 @@ const Contact = () => {
                 Get in Touch
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Have a project in mind? Whether it's blockchain development, 
-                smart contracts, or digital transformation, we're here to help 
-                you navigate the technical challenges and create innovative solutions.
+                Have an AI or blockchain project in mind? Whether it's autonomous agents, 
+                DeFi protocols, or Web3 infrastructure, we're here to help you build 
+                the next generation of decentralized applications.
               </p>
             </div>
 
@@ -196,33 +190,12 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Business Hours */}
-            <div className="bg-card rounded-lg p-6 shadow-soft">
-              <h4 className="font-semibold text-card-foreground mb-4">
-                Business Hours
-              </h4>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM CET</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 2:00 PM CET</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Response Time */}
-            <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4">
-              <p className="text-sm text-secondary-dark font-medium">
-                ⚡ Average response time: 4 hours during business hours
-              </p>
-            </div>
+                    {/* Response Time */}
+                    <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4">
+                      <p className="text-sm text-secondary-dark font-medium">
+                        ⚡ We respond immediately during business hours
+                      </p>
+                    </div>
           </div>
         </div>
       </div>

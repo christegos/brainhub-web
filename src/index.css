@@ -2,38 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brainhub Design System - Professional blockchain/tech company colors and styles */
+/* Brainhub Design System - Modern tech startup colors and styles */
 
 @layer base {
   :root {
     /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 218 25% 15%;
+    --foreground: 222 84% 5%;
 
     /* Card system */
     --card: 0 0% 100%;
-    --card-foreground: 218 25% 15%;
+    --card-foreground: 222 84% 5%;
 
     /* Popover system */
     --popover: 0 0% 100%;
-    --popover-foreground: 218 25% 15%;
+    --popover-foreground: 222 84% 5%;
 
-    /* Primary - Deep blue for trust and professionalism */
-    --primary: 218 89% 24%;
+    /* Primary - Electric blue for tech innovation */
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 218 89% 34%;
-    --primary-dark: 218 89% 14%;
+    --primary-light: 221 83% 63%;
+    --primary-dark: 221 83% 43%;
 
-    /* Secondary - Teal for innovation */
-    --secondary: 180 84% 47%;
+    /* Secondary - Vibrant purple for AI/blockchain */
+    --secondary: 262 83% 58%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 180 84% 57%;
-    --secondary-dark: 180 84% 37%;
+    --secondary-light: 262 83% 68%;
+    --secondary-dark: 262 83% 48%;
 
-    /* Accent - Silver/grey for sophistication */
-    --accent: 210 15% 90%;
-    --accent-foreground: 218 25% 15%;
-    --accent-dark: 210 15% 75%;
+    /* Accent - Modern grey for sophistication */
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 84% 5%;
+    --accent-dark: 210 40% 85%;
 
     /* Muted colors */
     --muted: 210 15% 96%;
@@ -49,10 +49,10 @@
     --ring: 218 89% 24%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(218 89% 24%), hsl(218 89% 34%));
-    --gradient-secondary: linear-gradient(135deg, hsl(180 84% 47%), hsl(180 84% 57%));
-    --gradient-hero: linear-gradient(135deg, hsl(218 89% 24%) 0%, hsl(180 84% 47%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 63%));
+    --gradient-secondary: linear-gradient(135deg, hsl(262 83% 58%), hsl(262 83% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(262 83% 58%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(218 89% 24% / 0.1);
@@ -207,5 +207,34 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Custom scrollbar for team section */
+  .team-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .team-scroll::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  .team-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  .team-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary-light));
+  }
+
+  /* Subtle animations only */
+  @keyframes subtle-fade {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+
+  .subtle-fade {
+    animation: subtle-fade 3s ease-in-out infinite;
   }
 }

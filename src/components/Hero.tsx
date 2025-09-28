@@ -25,17 +25,17 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            We Build the
-            <span className="block gradient-secondary bg-clip-text text-transparent">
-              Future of Tech
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            <span className="block">Brainhub</span>
+            <span className="block text-2xl md:text-3xl font-normal text-white/90 mt-2">
+              Where AI meets Blockchain
             </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Brainhub is a Cyprus-based tech startup specializing in blockchain solutions, 
-            smart contracts, and cutting-edge digital infrastructure for modern businesses.
+          <p className="text-lg md:text-xl mb-6 text-white/90 max-w-2xl mx-auto leading-relaxed">
+            Building the next generation of decentralized applications powered by 
+            AI and smart contracts.
           </p>
 
           {/* CTA Buttons */}
@@ -43,37 +43,37 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="xl"
-              onClick={() => scrollToSection("#solution")}
+              onClick={() => scrollToSection("#contact")}
               className="group"
             >
-              Explore Our Work
+              Get in Touch
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button 
               variant="glass" 
               size="xl"
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => scrollToSection("#about")}
               className="group"
             >
               <Play className="mr-2 h-5 w-5" />
-              Watch Our Story
+              Learn More
             </Button>
           </div>
 
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">2019</div>
+            <div className="glass rounded-xl p-6 hover:scale-105 transition-transform duration-300 group">
+              <div className="text-3xl font-bold mb-2 group-hover:text-secondary transition-colors">2024</div>
               <div className="text-white/80">Founded</div>
             </div>
-            <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">50+</div>
-              <div className="text-white/80">Projects</div>
+            <div className="glass rounded-xl p-6 hover:scale-105 transition-transform duration-300 group">
+              <div className="text-3xl font-bold mb-2 group-hover:text-secondary transition-colors">AI + Web3</div>
+              <div className="text-white/80">Focus</div>
             </div>
-            <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">10+</div>
-              <div className="text-white/80">Team Members</div>
+            <div className="glass rounded-xl p-6 hover:scale-105 transition-transform duration-300 group">
+              <div className="text-3xl font-bold mb-2 group-hover:text-secondary transition-colors">Global</div>
+              <div className="text-white/80">Reach</div>
             </div>
           </div>
         </div>

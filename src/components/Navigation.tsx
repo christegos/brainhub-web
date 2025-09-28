@@ -17,12 +17,10 @@ const Navigation = () => {
 
   const navItems = [
     { label: "Home", href: "#hero" },
-    { label: "About", href: "#problem" },
-    { label: "What We Do", href: "#solution" },
-    { label: "Capabilities", href: "#features" },
-    { label: "Projects", href: "#use-cases" },
+    { label: "About", href: "#about" },
+    { label: "Our Work", href: "#work" },
+    { label: "Values", href: "#features" },
     { label: "Team", href: "#team" },
-    { label: "Partners", href: "#trust" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -63,7 +61,7 @@ const Navigation = () => {
               size="sm"
               onClick={() => scrollToSection("#contact")}
             >
-              Get Started
+              Get in Touch
             </Button>
           </div>
 
@@ -98,7 +96,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection("#contact")}
                 className="mt-2"
               >
-                Get Started
+                Get in Touch
               </Button>
             </div>
           </div>
