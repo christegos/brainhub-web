@@ -27,16 +27,18 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             About
-            <span className="gradient-primary bg-clip-text text-transparent"> Brainhub</span>
+            <span className="text-gradient-professional"> Brainhub</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            A cutting-edge technology startup pushing the boundaries of AI and blockchain. 
+          <p className="text-xl text-muted-foreground leading-relaxed mb-6 font-light">
+            A cutting-edge technology startup pushing the boundaries of 
+            <span className="text-primary font-medium"> AI</span> and 
+            <span className="text-secondary font-medium"> blockchain</span>. 
             We're building the infrastructure for the next generation of decentralized applications.
           </p>
-          <p className="text-base text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed font-light">
             Our mission is to create intelligent, autonomous systems that operate on blockchain networks, 
             combining AI with the security and transparency of decentralized technology.
           </p>
@@ -48,27 +50,27 @@ const About = () => {
               key={index} 
               className="group relative"
             >
-              <div className="bg-card rounded-2xl p-8 shadow-soft hover-lift border border-border/50 transition-all duration-300 group-hover:border-primary/20 group-hover:shadow-medium h-full">
+              <div className="bg-card rounded-3xl p-8 shadow-soft hover-lift border border-border/50 transition-all duration-300 group-hover:border-primary/30 group-hover:shadow-medium h-full glass-enhanced">
                 <div className="flex items-start space-x-6">
                   <div className="relative flex-shrink-0">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center group-hover:scale-110 transition-all duration-300 group-hover:shadow-glow">
                       <div className="text-primary group-hover:text-secondary transition-colors">
                         {highlight.icon}
                       </div>
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-card-foreground group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-bold mb-4 text-card-foreground group-hover:text-gradient-primary transition-all">
                       {highlight.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed text-lg font-light">
                       {highlight.description}
                     </p>
                   </div>
                 </div>
                 
-                {/* Subtle accent line */}
-                <div className="mt-6 w-12 h-1 bg-gradient-to-r from-primary to-secondary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Enhanced accent line */}
+                <div className="mt-8 w-16 h-1 bg-gradient-to-r from-primary via-secondary to-tertiary rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:w-24"></div>
               </div>
             </div>
           ))}

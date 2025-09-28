@@ -44,6 +44,12 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
           dark: "hsl(var(--accent-dark))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
+          light: "hsl(var(--tertiary-light))",
+          dark: "hsl(var(--tertiary-dark))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

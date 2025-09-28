@@ -112,7 +112,7 @@ const OurWork = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {currentProjects.map((project, index) => (
               <div key={index} className="group relative">
-                <div className="bg-card rounded-2xl p-8 shadow-soft hover-lift border border-border/50 transition-all duration-300 group-hover:border-primary/20 group-hover:shadow-medium">
+                <div className="bg-card rounded-2xl p-8 shadow-soft hover-lift border border-border/50 transition-all duration-300 group-hover:border-primary/20 group-hover:shadow-medium h-full flex flex-col">
                   {/* Status Badge */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center space-x-2">
@@ -132,7 +132,7 @@ const OurWork = () => {
                     {project.title}
                   </h4>
                   
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-muted-foreground leading-relaxed mb-6 flex-grow">
                     {project.description}
                   </p>
                   
