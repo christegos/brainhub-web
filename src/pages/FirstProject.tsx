@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLeft, ExternalLink, Github, Zap, Shield, Globe } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Shield, CheckCircle, FileCheck, Lock, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -8,19 +8,19 @@ const FirstProject = () => {
 
   const features = [
     {
-      icon: <Zap className="h-6 w-6" />,
-      title: "AI-Powered",
-      description: "Intelligent automation and decision-making capabilities"
+      icon: <Shield className="h-6 w-6" />,
+      title: "Tamper-Proof",
+      description: "Immutable certificate records on blockchain ensuring authenticity"
     },
     {
-      icon: <Shield className="h-6 w-6" />,
-      title: "Blockchain Security",
-      description: "Decentralized architecture with smart contract integration"
+      icon: <CheckCircle className="h-6 w-6" />,
+      title: "Instant Verification",
+      description: "Real-time validation of certificates with smart contract automation"
     },
     {
       icon: <Globe className="h-6 w-6" />,
-      title: "Global Scale",
-      description: "Built for worldwide deployment and accessibility"
+      title: "Global Access",
+      description: "Universal verification system accessible from anywhere"
     }
   ];
 
@@ -50,17 +50,17 @@ const FirstProject = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Zap className="h-4 w-4" />
+              <FileCheck className="h-4 w-4" />
               First Project
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              <span className="text-gradient-professional">NeuralChain</span>
+              <span className="text-gradient-professional">CertChain</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Our flagship project combining artificial intelligence with blockchain technology 
-              to create autonomous, self-improving smart contracts.
+              A revolutionary blockchain-based certificate verification system that eliminates 
+              fraud and ensures instant, tamper-proof validation of credentials.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -70,7 +70,7 @@ const FirstProject = () => {
               </Button>
               <Button variant="outline" size="lg" className="group">
                 <Github className="mr-2 h-4 w-4" />
-                View Code
+                Join Early Access
               </Button>
             </div>
           </div>
@@ -84,31 +84,31 @@ const FirstProject = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-foreground">
-                  Revolutionizing Smart Contracts
+                  Secure Certificate Verification
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  NeuralChain represents a breakthrough in blockchain technology, introducing 
-                  AI-powered smart contracts that can learn, adapt, and optimize themselves 
-                  over time without human intervention.
+                  CertChain addresses the critical need for reliable credential verification 
+                  in today's digital world. By leveraging blockchain technology, we create 
+                  an immutable record of certificates that cannot be forged or manipulated.
                 </p>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Built on a custom blockchain architecture, NeuralChain enables developers 
-                  to create truly intelligent decentralized applications that evolve with 
-                  their users' needs.
+                  Our smart contract-based system automates the verification process, 
+                  providing instant validation while maintaining the highest security standards 
+                  and reducing administrative overhead.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-foreground">Self-learning contract optimization</span>
+                    <span className="text-foreground">Immutable certificate records</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-foreground">Real-time performance analytics</span>
+                    <span className="text-foreground">Automated verification process</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-foreground">Cross-chain compatibility</span>
+                    <span className="text-foreground">Reduced fraud and administrative costs</span>
                   </div>
                 </div>
               </div>
@@ -117,9 +117,9 @@ const FirstProject = () => {
                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                      <Zap className="h-8 w-8 text-primary" />
+                      <FileCheck className="h-8 w-8 text-primary" />
                     </div>
-                    <p className="text-muted-foreground">Project Demo Coming Soon</p>
+                    <p className="text-muted-foreground">CertChain Demo Coming Soon</p>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const FirstProject = () => {
                 Key Features
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                NeuralChain brings together the best of AI and blockchain technology
+                CertChain provides secure, efficient, and reliable certificate verification
               </p>
             </div>
 
@@ -171,7 +171,7 @@ const FirstProject = () => {
             </h2>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {["Solidity", "Python", "TensorFlow", "Ethereum", "IPFS", "React", "Node.js", "Docker"].map((tech, index) => (
+              {["Solidity", "Ethereum", "IPFS", "React", "Node.js", "Web3.js", "MetaMask", "OpenZeppelin"].map((tech, index) => (
                 <div key={index} className="glass rounded-xl p-4 hover:scale-105 transition-transform">
                   <div className="text-foreground font-medium">{tech}</div>
                 </div>
@@ -186,16 +186,16 @@ const FirstProject = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-foreground">
-              Ready to Experience the Future?
+              Ready to Secure Your Certificates?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join us in building the next generation of intelligent blockchain applications.
+              Experience the future of certificate verification with blockchain technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="professional" size="lg">
-                Get Early Access
+                Enroll Your Organization
               </Button>
-              <Button variant="outline" size="lg" onClick={() => navigate("/company-pitch")}>
+              <Button variant="outline" size="lg" onClick={() => navigate("/company")}>
                 Learn More About Brainhub
               </Button>
             </div>

@@ -6,22 +6,22 @@ const OurWork = () => {
     {
       icon: <Shield className="h-8 w-8" />,
       title: "AI Agents",
-      description: "Autonomous AI agents that operate on blockchain networks, making intelligent decisions in real-time."
+      description: "Sophisticated intelligent agents that operate on blockchain networks, making smart decisions in real-time."
     },
     {
       icon: <FileText className="h-8 w-8" />,
       title: "Smart Contracts",
-      description: "Self-executing contracts powered by AI that adapt and optimize based on real-world conditions."
+      description: "Advanced self-executing contracts that adapt and optimize based on real-world conditions."
     },
     {
       icon: <Ship className="h-8 w-8" />,
       title: "DeFi Protocols",
-      description: "Decentralized finance protocols enhanced with AI for automated trading and risk management."
+      description: "Robust decentralized finance protocols with sophisticated automated trading and risk management capabilities."
     },
     {
       icon: <Lock className="h-8 w-8" />,
       title: "Web3 Infrastructure",
-      description: "Next-generation blockchain infrastructure that scales with AI-powered optimization."
+      description: "Enterprise-grade scalable blockchain infrastructure with intelligent optimization capabilities."
     }
   ];
 
@@ -37,7 +37,7 @@ const OurWork = () => {
       description: "Innovative platform for tokenizing real estate assets, making property investment more accessible and liquid."
     },
     {
-      title: "AI Trend Prediction Engine",
+      title: "Trend Prediction Engine",
       status: "Planning",
       description: "Real-time trend prediction system that analyzes market patterns and predicts future movements across blockchain and web platforms."
     }
@@ -60,8 +60,8 @@ const OurWork = () => {
             <span className="gradient-secondary bg-clip-text text-transparent"> Work</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Pioneering the convergence of AI and blockchain technology, creating intelligent 
-            systems that operate autonomously on decentralized networks.
+            We've been building practical applications that combine artificial intelligence and blockchain technology, 
+            creating intelligent systems that operate on decentralized networks.
           </p>
         </div>
 

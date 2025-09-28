@@ -20,8 +20,8 @@ const Navigation = () => {
     { label: "Home", href: "/", isRoute: true },
     { label: "About", href: "#about", isRoute: false },
     { label: "Our Work", href: "#work", isRoute: false },
-    { label: "Projects", href: "/first-project", isRoute: true },
-    { label: "Company", href: "/company-pitch", isRoute: true },
+    { label: "Projects", href: "/certchain", isRoute: true },
+    { label: "Company", href: "/company", isRoute: true },
     { label: "Contact", href: "#contact", isRoute: false },
   ];
 

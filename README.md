@@ -47,6 +47,41 @@ npm run dev
 - Mobile-first approach
 - SEO optimized
 
-## Deployment
+## Quick Deployment
 
-The project can be deployed to any static hosting service that supports React applications.
+### Option 1: Simple Build & Deploy
+
+```bash
+# Install dependencies
+npm install
+
+# Build for production
+npm run build
+
+# The 'dist' folder contains your deployable website
+```
+
+### Option 2: Automated Deployment
+
+```bash
+# Run the deployment script
+./deploy.sh
+```
+
+### Option 3: Docker Deployment
+
+```bash
+# Build Docker image
+docker build -t brainhub-website .
+
+# Run container
+docker run -p 80:80 brainhub-website
+```
+
+## Deployment Options
+
+- **Static Hosting**: Upload `dist` folder to Netlify, Vercel, GitHub Pages
+- **Traditional Hosting**: Upload `dist` contents to any web server
+- **Docker**: Use the included Dockerfile for containerized deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.

@@ -183,8 +183,8 @@ const Team = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">2024</div>
-                <div className="text-muted-foreground">Company Founded</div>
+                <div className="text-3xl font-bold text-primary mb-2">Established</div>
+                <div className="text-muted-foreground">Company</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">Cyprus</div>

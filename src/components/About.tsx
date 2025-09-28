@@ -33,13 +33,13 @@ const About = () => {
             <span className="text-gradient-professional"> Brainhub</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-6 font-light">
-            A cutting-edge technology startup pushing the boundaries of 
-            <span className="text-primary font-medium"> AI</span> and 
+            An established technology company with proven expertise in practical applications of 
+            <span className="text-primary font-medium"> artificial intelligence</span> and 
             <span className="text-secondary font-medium"> blockchain</span>. 
-            We're building the infrastructure for the next generation of decentralized applications.
+            We've been building solutions that solve real-world problems.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed font-light">
-            Our mission is to create intelligent, autonomous systems that operate on blockchain networks, 
+            Our mission is to create intelligent systems that operate on blockchain networks, 
             combining AI with the security and transparency of decentralized technology.
           </p>
         </div>

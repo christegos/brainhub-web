@@ -37,7 +37,7 @@ const Hero = () => {
           {/* Subheadline */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
             Building the next generation of decentralized applications powered by 
-            <span className="text-blue-300 font-medium"> AI</span> and 
+            <span className="text-blue-300 font-medium"> artificial intelligence</span> and 
             <span className="text-teal-300 font-medium"> smart contracts</span>.
           </p>
 
@@ -68,9 +68,9 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="glass rounded-2xl p-8 hover:scale-105 transition-all duration-300 group border border-white/20 hover:border-blue-300/50">
               <div className="text-4xl font-bold mb-3 bg-gradient-to-r from-blue-300 to-blue-400 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:to-blue-300 transition-all">
-                2024
+                Innovation
               </div>
-              <div className="text-white/90 font-medium">Founded</div>
+              <div className="text-white/90 font-medium">Driven</div>
             </div>
             <div className="glass rounded-2xl p-8 hover:scale-105 transition-all duration-300 group border border-white/20 hover:border-slate-300/50">
               <div className="text-4xl font-bold mb-3 bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text text-transparent group-hover:from-slate-200 group-hover:to-slate-300 transition-all">
