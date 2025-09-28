@@ -4,23 +4,23 @@ const Problem = () => {
   const problems = [
     {
       icon: <FileX className="h-8 w-8" />,
-      title: "Certificate Fraud",
-      description: "Maritime certificates can be easily forged or tampered with, leading to safety risks and compliance issues."
+      title: "Legacy Systems",
+      description: "Many businesses still rely on outdated systems that lack transparency, security, and scalability for modern operations."
     },
     {
       icon: <Eye className="h-8 w-8" />,
-      title: "Lack of Transparency",
-      description: "Traditional verification systems are opaque, making it difficult to trace the authenticity of documents."
+      title: "Trust Gaps",
+      description: "Digital interactions often lack sufficient trust mechanisms, leading to disputes and inefficient verification processes."
     },
     {
       icon: <Clock className="h-8 w-8" />,
-      title: "Slow Verification",
-      description: "Manual verification processes are time-consuming and prone to human error, causing delays in operations."
+      title: "Manual Processes",
+      description: "Time-consuming manual workflows that are prone to human error and don't scale with growing business needs."
     },
     {
       icon: <AlertTriangle className="h-8 w-8" />,
-      title: "Trust Issues",
-      description: "Stakeholders struggle to trust the validity of certificates without a reliable, centralized verification system."
+      title: "Data Silos",
+      description: "Isolated systems that don't communicate effectively, creating bottlenecks and limiting data accessibility."
     }
   ];
 
@@ -29,12 +29,12 @@ const Problem = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            The Trust Crisis in
-            <span className="gradient-primary bg-clip-text text-transparent"> Digital Verification</span>
+            The Challenge with
+            <span className="gradient-primary bg-clip-text text-transparent"> Modern Business</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Industries worldwide struggle with document authenticity, verification delays, 
-            and trust issues that blockchain technology can solve.
+            Businesses across industries face common challenges with legacy systems, 
+            trust gaps, and inefficient processes that blockchain technology can solve.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ const Problem = () => {
         {/* Call to action */}
         <div className="text-center mt-16">
           <div className="inline-flex items-center space-x-2 text-lg font-medium text-primary">
-            <span>But there's a better way...</span>
+            <span>That's where we come in...</span>
             <ArrowDown className="h-5 w-5 animate-bounce" />
           </div>
         </div>

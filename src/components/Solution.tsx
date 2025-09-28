@@ -28,23 +28,23 @@ const Solution = () => {
   const steps = [
     {
       number: "01",
-      title: "Document Creation",
-      description: "Certificates are created and cryptographically signed"
+      title: "Discovery",
+      description: "We analyze your business needs and identify blockchain opportunities"
     },
     {
       number: "02", 
-      title: "Blockchain Storage",
-      description: "Documents are stored immutably on the blockchain"
+      title: "Design",
+      description: "Custom solution architecture tailored to your requirements"
     },
     {
       number: "03",
-      title: "Smart Verification",
-      description: "Smart contracts automatically validate authenticity"
+      title: "Development",
+      description: "Agile development with cutting-edge blockchain technologies"
     },
     {
       number: "04",
-      title: "Instant Access",
-      description: "Stakeholders can verify documents instantly"
+      title: "Deployment",
+      description: "Seamless integration and ongoing support for your solution"
     }
   ];
 
@@ -61,12 +61,12 @@ const Solution = () => {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Blockchain-Powered
-            <span className="gradient-secondary bg-clip-text text-transparent"> Verification</span>
+            What We
+            <span className="gradient-secondary bg-clip-text text-transparent"> Build</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Our smart contract solutions create an unbreakable chain of trust for digital certificates 
-            and verification systems.
+            We specialize in creating innovative blockchain solutions, smart contracts, 
+            and digital infrastructure that solve real-world business challenges.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ const Solution = () => {
         {/* How It Works */}
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-            How It Works
+            Our Process
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -122,13 +122,13 @@ const Solution = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <Button 
-            variant="hero" 
-            size="lg"
-            onClick={() => scrollToSection("#features")}
-          >
-            Explore Features
-          </Button>
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => scrollToSection("#features")}
+            >
+              See Our Capabilities
+            </Button>
         </div>
       </div>
     </section>

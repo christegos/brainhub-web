@@ -13,51 +13,51 @@ const Features = () => {
   const features = [
     {
       icon: <Lock className="h-10 w-10" />,
-      title: "Cryptographic Security",
-      description: "Advanced encryption ensures your certificates are tamper-proof and secure against unauthorized access.",
-      benefits: ["256-bit encryption", "Digital signatures", "Hash verification"]
+      title: "Blockchain Expertise",
+      description: "Deep knowledge in blockchain protocols, smart contracts, and decentralized systems architecture.",
+      benefits: ["Smart contracts", "DeFi solutions", "Custom blockchains"]
     },
     {
       icon: <Clock className="h-10 w-10" />,
-      title: "Real-Time Verification",
-      description: "Instant validation of documents with smart contracts that process verification requests in seconds.",
-      benefits: ["Sub-second response", "24/7 availability", "Automated processing"]
+      title: "Agile Development",
+      description: "Fast, iterative development cycles that deliver working solutions quickly and efficiently.",
+      benefits: ["Rapid prototyping", "Weekly sprints", "Continuous delivery"]
     },
     {
       icon: <Globe className="h-10 w-10" />,
-      title: "Global Accessibility",
-      description: "Access your verification system from anywhere in the world with our distributed blockchain network.",
-      benefits: ["Worldwide access", "Multi-language support", "Cross-border compatibility"]
+      title: "Full-Stack Solutions",
+      description: "End-to-end development from backend infrastructure to user-friendly frontend interfaces.",
+      benefits: ["Frontend & backend", "Mobile apps", "Web platforms"]
     },
     {
       icon: <Database className="h-10 w-10" />,
-      title: "Immutable Storage",
-      description: "Documents stored on the blockchain cannot be modified, deleted, or corrupted, ensuring permanent records.",
-      benefits: ["Permanent storage", "Version control", "Audit trails"]
+      title: "Data Architecture",
+      description: "Robust data management solutions that ensure scalability, security, and performance.",
+      benefits: ["Database design", "API development", "Data migration"]
     },
     {
       icon: <Users className="h-10 w-10" />,
-      title: "Multi-Party Trust",
-      description: "Enable multiple stakeholders to trust the same verification system without intermediaries.",
-      benefits: ["Decentralized trust", "Stakeholder transparency", "Reduced disputes"]
+      title: "User Experience",
+      description: "Creating intuitive interfaces that make complex blockchain technology accessible to everyone.",
+      benefits: ["UI/UX design", "User research", "Accessibility"]
     },
     {
       icon: <Smartphone className="h-10 w-10" />,
-      title: "Mobile Ready",
-      description: "Native mobile applications and responsive web interfaces for verification on any device.",
-      benefits: ["iOS & Android apps", "Offline capability", "QR code scanning"]
+      title: "Mobile First",
+      description: "Mobile-optimized solutions that work seamlessly across all devices and platforms.",
+      benefits: ["iOS & Android", "Responsive design", "Cross-platform"]
     },
     {
       icon: <BarChart className="h-10 w-10" />,
-      title: "Analytics & Reporting",
-      description: "Comprehensive analytics dashboard to track verification usage, trends, and system performance.",
-      benefits: ["Usage analytics", "Custom reports", "Performance metrics"]
+      title: "Analytics & Insights",
+      description: "Data-driven solutions with comprehensive analytics to track performance and user behavior.",
+      benefits: ["Real-time analytics", "Custom dashboards", "Business intelligence"]
     },
     {
       icon: <Settings className="h-10 w-10" />,
-      title: "Easy Integration",
-      description: "RESTful APIs and SDKs make it simple to integrate our verification system into existing workflows.",
-      benefits: ["REST APIs", "SDK libraries", "Documentation"]
+      title: "DevOps & Infrastructure",
+      description: "Reliable deployment pipelines and cloud infrastructure that scales with your business.",
+      benefits: ["CI/CD pipelines", "Cloud deployment", "Monitoring"]
     }
   ];
 
@@ -66,12 +66,12 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Powerful Features for
-            <span className="gradient-primary bg-clip-text text-transparent"> Modern Verification</span>
+            Our Core
+            <span className="gradient-primary bg-clip-text text-transparent"> Capabilities</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Built with enterprise-grade security and designed for scalability, 
-            our platform delivers the tools you need for reliable document verification.
+            We combine technical expertise with innovative thinking to deliver 
+            solutions that drive real business value and digital transformation.
           </p>
         </div>
 
@@ -112,10 +112,10 @@ const Features = () => {
         <div className="text-center mt-16">
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
-              Ready to Transform Your Verification Process?
+              Ready to Build Something Amazing?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Join the blockchain revolution and bring unbreakable trust to your organization.
+              Let's discuss your project and explore how we can bring your vision to life.
             </p>
           </div>
         </div>

@@ -4,75 +4,81 @@ const UseCases = () => {
   const useCases = [
     {
       icon: <Anchor className="h-12 w-12" />,
-      title: "Maritime Certificates",
-      description: "Secure vessel certifications, crew credentials, and port documentation",
-      industries: ["Shipping", "Port Operations", "Marine Insurance"],
+      title: "Maritime Verification",
+      description: "Blockchain-based certificate verification system for the maritime industry",
+      industries: ["Shipping", "Port Operations", "Maritime Insurance"],
       benefits: [
         "Instant vessel verification",
         "Crew credential validation", 
-        "Compliance tracking",
-        "Insurance claim processing"
-      ]
+        "Compliance automation",
+        "Fraud prevention"
+      ],
+      status: "Live Production"
     },
     {
       icon: <Truck className="h-12 w-12" />,
-      title: "Supply Chain Tracking",
-      description: "End-to-end product verification and provenance tracking",
-      industries: ["Manufacturing", "Food & Beverage", "Pharmaceuticals"],
+      title: "Supply Chain Platform",
+      description: "End-to-end traceability solution for manufacturing and logistics",
+      industries: ["Manufacturing", "Food & Beverage", "Automotive"],
       benefits: [
         "Product authenticity",
         "Origin verification",
-        "Quality assurance",
+        "Quality tracking",
         "Regulatory compliance"
-      ]
+      ],
+      status: "In Development"
     },
     {
       icon: <FileCheck className="h-12 w-12" />,
-      title: "Academic Credentials",
-      description: "Tamper-proof diplomas, certificates, and professional qualifications",
+      title: "Digital Credentials",
+      description: "Secure academic and professional certification platform",
       industries: ["Education", "HR & Recruitment", "Professional Services"],
       benefits: [
         "Degree verification",
         "Skills certification",
         "Career validation",
-        "Fraud prevention"
-      ]
+        "Instant verification"
+      ],
+      status: "Pilot Phase"
     },
     {
       icon: <Shield className="h-12 w-12" />,
-      title: "Legal Documents",
-      description: "Secure contracts, agreements, and official documentation",
-      industries: ["Legal Services", "Real Estate", "Government"],
+      title: "DeFi Protocol",
+      description: "Decentralized finance solutions for modern banking needs",
+      industries: ["Banking", "Fintech", "Investment"],
       benefits: [
-        "Contract integrity",
-        "Document authenticity",
-        "Legal compliance",
-        "Dispute resolution"
-      ]
+        "Smart contracts",
+        "Automated lending",
+        "Yield farming",
+        "Governance tokens"
+      ],
+      status: "Research"
     },
     {
       icon: <Users className="h-12 w-12" />,
-      title: "Identity Verification",
-      description: "Digital identity management and KYC compliance solutions",
-      industries: ["Financial Services", "Healthcare", "Government"],
+      title: "Identity Management",
+      description: "Self-sovereign identity solutions for privacy-first verification",
+      industries: ["Healthcare", "Government", "Financial Services"],
       benefits: [
-        "KYC automation",
-        "Identity fraud prevention",
         "Privacy protection",
-        "Regulatory compliance"
-      ]
+        "KYC automation",
+        "Identity sovereignty",
+        "Zero-knowledge proofs"
+      ],
+      status: "Prototype"
     },
     {
       icon: <Award className="h-12 w-12" />,
-      title: "Professional Licensing",
-      description: "Industry certifications and professional license validation",
-      industries: ["Healthcare", "Engineering", "Finance"],
+      title: "NFT Marketplace",
+      description: "Custom marketplace for digital assets and collectibles",
+      industries: ["Gaming", "Art", "Entertainment"],
       benefits: [
-        "License verification",
-        "Continuing education",
-        "Professional standards",
-        "Public safety"
-      ]
+        "Digital ownership",
+        "Royalty automation",
+        "Cross-chain support",
+        "Creator tools"
+      ],
+      status: "Planning"
     }
   ];
 
@@ -81,12 +87,12 @@ const UseCases = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Transforming Industries with
-            <span className="gradient-secondary bg-clip-text text-transparent"> Verified Trust</span>
+            Our
+            <span className="gradient-secondary bg-clip-text text-transparent"> Projects & Solutions</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            From maritime operations to academic credentials, our blockchain solutions 
-            bring security and transparency to diverse industries worldwide.
+            From concept to deployment, we work across diverse industries to create 
+            innovative blockchain solutions that solve real-world challenges.
           </p>
         </div>
 
@@ -107,6 +113,18 @@ const UseCases = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed text-center">
                 {useCase.description}
               </p>
+              {/* Status Badge */}
+              <div className="mb-6">
+                <span className={`px-3 py-1 text-xs rounded-full font-medium ${
+                  useCase.status === 'Live Production' 
+                    ? 'bg-secondary/20 text-secondary-dark border border-secondary/30' 
+                    : useCase.status === 'In Development'
+                    ? 'bg-primary/20 text-primary border border-primary/30'
+                    : 'bg-accent-dark/20 text-accent-foreground border border-accent-dark/30'
+                }`}>
+                  {useCase.status}
+                </span>
+              </div>
               
               {/* Industries */}
               <div className="mb-6">
@@ -142,24 +160,24 @@ const UseCases = () => {
           ))}
         </div>
 
-        {/* Statistics */}
+        {/* Company Stats */}
         <div className="mt-20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500M+</div>
-              <div className="text-muted-foreground">Documents Secured</div>
+              <div className="text-4xl font-bold text-primary mb-2">6</div>
+              <div className="text-muted-foreground">Active Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
-              <div className="text-muted-foreground">Uptime Reliability</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">150+</div>
-              <div className="text-muted-foreground">Global Partners</div>
+              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-muted-foreground">Industries Served</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground">Countries Served</div>
+              <div className="text-muted-foreground">Solutions Delivered</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">99%</div>
+              <div className="text-muted-foreground">Client Satisfaction</div>
             </div>
           </div>
         </div>

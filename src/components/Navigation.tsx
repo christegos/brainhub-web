@@ -17,12 +17,12 @@ const Navigation = () => {
 
   const navItems = [
     { label: "Home", href: "#hero" },
-    { label: "Problem", href: "#problem" },
-    { label: "Solution", href: "#solution" },
-    { label: "Features", href: "#features" },
-    { label: "Use Cases", href: "#use-cases" },
+    { label: "About", href: "#problem" },
+    { label: "What We Do", href: "#solution" },
+    { label: "Capabilities", href: "#features" },
+    { label: "Projects", href: "#use-cases" },
     { label: "Team", href: "#team" },
-    { label: "Trust", href: "#trust" },
+    { label: "Partners", href: "#trust" },
     { label: "Contact", href: "#contact" },
   ];
 

@@ -26,16 +26,16 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Blockchain Solutions
+            We Build the
             <span className="block gradient-secondary bg-clip-text text-transparent">
-              You Can Trust
+              Future of Tech
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            We build secure, verifiable smart contract solutions that bring transparency 
-            and trust to maritime certificates, supply chains, and digital verification systems.
+            Brainhub is a Cyprus-based tech startup specializing in blockchain solutions, 
+            smart contracts, and cutting-edge digital infrastructure for modern businesses.
           </p>
 
           {/* CTA Buttons */}
@@ -46,7 +46,7 @@ const Hero = () => {
               onClick={() => scrollToSection("#solution")}
               className="group"
             >
-              Discover Our Solution
+              Explore Our Work
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
@@ -57,23 +57,23 @@ const Hero = () => {
               className="group"
             >
               <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+              Watch Our Story
             </Button>
           </div>
 
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">100%</div>
-              <div className="text-white/80">Verifiable</div>
+              <div className="text-3xl font-bold mb-2">2019</div>
+              <div className="text-white/80">Founded</div>
             </div>
             <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-white/80">Accessible</div>
+              <div className="text-3xl font-bold mb-2">50+</div>
+              <div className="text-white/80">Projects</div>
             </div>
             <div className="glass rounded-lg p-6">
-              <div className="text-3xl font-bold mb-2">Secure</div>
-              <div className="text-white/80">By Design</div>
+              <div className="text-3xl font-bold mb-2">10+</div>
+              <div className="text-white/80">Team Members</div>
             </div>
           </div>
         </div>

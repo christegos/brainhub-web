@@ -27,13 +27,13 @@ const Trust = () => {
   const partners = [
     {
       name: "Cyprus Maritime Authority",
-      type: "Regulatory Partner",
-      status: "Pilot Program"
+      type: "Government Partner",
+      status: "Active Project"
     },
     {
-      name: "Limassol Port Authority", 
-      type: "Implementation Partner",
-      status: "Active"
+      name: "University of Cyprus", 
+      type: "Research Partner",
+      status: "Collaboration"
     },
     {
       name: "European Blockchain Alliance",
@@ -41,36 +41,36 @@ const Trust = () => {
       status: "Member"
     },
     {
-      name: "Maritime Cyprus",
-      type: "Industry Partner",
-      status: "Active"
+      name: "Startup Cyprus",
+      type: "Ecosystem Partner",
+      status: "Member"
     }
   ];
 
   const achievements = [
     {
       icon: <Users className="h-10 w-10" />,
-      metric: "10,000+",
-      label: "Verified Certificates",
-      description: "Successfully processed and validated"
+      metric: "50+",
+      label: "Projects Delivered",
+      description: "Successfully completed across industries"
     },
     {
       icon: <Zap className="h-10 w-10" />,
-      metric: "99.9%",
-      label: "System Uptime",
-      description: "Reliable 24/7 service availability"
+      metric: "5",
+      label: "Years Experience",
+      description: "In blockchain and tech development"
     },
     {
       icon: <Shield className="h-10 w-10" />,
-      metric: "Zero",
-      label: "Security Breaches",
-      description: "Maintained since inception"
+      metric: "100%",
+      label: "Security Record",
+      description: "Zero security incidents to date"
     },
     {
       icon: <Award className="h-10 w-10" />,
       metric: "3",
       label: "Industry Awards",
-      description: "Recognition for innovation"
+      description: "Recognition for innovation and excellence"
     }
   ];
 
@@ -79,12 +79,12 @@ const Trust = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Trusted by Industry
-            <span className="gradient-primary bg-clip-text text-transparent"> Leaders</span>
+            Trusted by
+            <span className="gradient-primary bg-clip-text text-transparent"> Partners & Clients</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Our commitment to security, compliance, and reliability has earned the trust 
-            of maritime authorities and industry partners across Europe.
+            Our commitment to excellence and innovation has earned us partnerships 
+            with leading organizations and recognition in the tech industry.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ const Trust = () => {
         {/* Partners */}
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-            Strategic Partners
+            Key Partners & Collaborators
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {partners.map((partner, index) => (
@@ -147,7 +147,7 @@ const Trust = () => {
         {/* Achievements */}
         <div>
           <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-            Proven Track Record
+            Company Achievements
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
@@ -176,13 +176,12 @@ const Trust = () => {
         <div className="mt-20 text-center">
           <div className="max-w-3xl mx-auto bg-card rounded-xl p-8 shadow-soft">
             <h3 className="text-xl font-bold mb-4 text-card-foreground">
-              Security First Approach
+              Innovation with Integrity
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Every aspect of our platform is designed with security as the foundation. 
-              From our development practices to our infrastructure, we maintain the highest 
-              standards of cybersecurity to protect your sensitive data and ensure the 
-              integrity of your verification systems.
+              At Brainhub, we believe in building technology that not only pushes boundaries 
+              but does so responsibly. Every project we undertake maintains the highest 
+              standards of security, compliance, and ethical development practices.
             </p>
           </div>
         </div>

@@ -70,12 +70,12 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Ready to Get
-            <span className="gradient-primary bg-clip-text text-transparent"> Started?</span>
+            Let's Build
+            <span className="gradient-primary bg-clip-text text-transparent"> Together</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Contact us to discuss how our blockchain verification solutions 
-            can transform your business operations.
+            Ready to start your next project? We'd love to hear about your ideas 
+            and explore how we can help bring them to life.
           </p>
         </div>
 
@@ -167,9 +167,9 @@ const Contact = () => {
                 Get in Touch
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                We're here to help you understand how blockchain verification 
-                can benefit your organization. Reach out to discuss your specific 
-                requirements and explore custom solutions.
+                Have a project in mind? Whether it's blockchain development, 
+                smart contracts, or digital transformation, we're here to help 
+                you navigate the technical challenges and create innovative solutions.
               </p>
             </div>
 
