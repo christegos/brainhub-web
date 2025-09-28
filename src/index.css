@@ -2,39 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Brainhub Design System - Professional blockchain/tech company colors and styles */
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 218 25% 15%;
 
+    /* Card system */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 218 25% 15%;
 
+    /* Popover system */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 218 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep blue for trust and professionalism */
+    --primary: 218 89% 24%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 218 89% 34%;
+    --primary-dark: 218 89% 14%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Teal for innovation */
+    --secondary: 180 84% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 180 84% 57%;
+    --secondary-dark: 180 84% 37%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent - Silver/grey for sophistication */
+    --accent: 210 15% 90%;
+    --accent-foreground: 218 25% 15%;
+    --accent-dark: 210 15% 75%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted colors */
+    --muted: 210 15% 96%;
+    --muted-foreground: 218 15% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Utility colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 210 15% 88%;
+    --input: 210 15% 94%;
+    --ring: 218 89% 24%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(218 89% 24%), hsl(218 89% 34%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 84% 47%), hsl(180 84% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(218 89% 24%) 0%, hsl(180 84% 47%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(218 89% 24% / 0.1);
+    --shadow-medium: 0 8px 32px -8px hsl(218 89% 24% / 0.15);
+    --shadow-strong: 0 16px 48px -16px hsl(218 89% 24% / 0.25);
+    --shadow-glow: 0 0 32px hsl(180 84% 47% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
@@ -100,6 +128,84 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero gradient background */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Shadow utilities */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Animation utilities */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Professional glass effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
