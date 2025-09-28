@@ -7,88 +7,88 @@ import devImage from "@/assets/team-dev.jpg";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Alex Chen",
-      role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      bio: "Former Google AI researcher with 10+ years in machine learning. Passionate about building the future of decentralized AI.",
-      expertise: ["AI Research", "Blockchain Strategy", "Leadership"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "alex@brainhub.ltd"
-              }
-    },
-    {
-      name: "Sarah Kim",
-      role: "CTO", 
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      bio: "Blockchain architect with expertise in Ethereum, Solana, and AI integration. Led development at multiple DeFi protocols.",
-      expertise: ["Blockchain Architecture", "Smart Contracts", "AI Integration"],
-              social: {
-                linkedin: "#",
-                twitter: "#", 
-                email: "sarah@brainhub.ltd"
-              }
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Head of AI",
+      name: "Angelos Hadjistavri",
+      role: "CPO / Product Manager",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      bio: "AI researcher specializing in neural networks and autonomous systems. PhD in Computer Science from Stanford.",
-      expertise: ["Machine Learning", "Neural Networks", "Autonomous Systems"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "marcus@brainhub.ltd"
-              }
+      bio: "Product strategist with deep understanding of blockchain applications and user experience. Drives product vision and market strategy.",
+      expertise: ["Product Strategy", "Blockchain UX", "Market Analysis"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "angelos@brainhub.ltd"
+      }
     },
     {
-      name: "Emma Thompson",
-      role: "Lead Developer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      bio: "Full-stack developer with expertise in Web3 technologies and AI model deployment. Built scalable dApps for major protocols.",
-      expertise: ["Web3 Development", "AI Deployment", "Full-Stack"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "emma@brainhub.ltd"
-              }
+      name: "Christos Tegos",
+      role: "CTO / Architect",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      bio: "Technical architect with extensive experience in blockchain systems and AI integration. Leads the development of our core technology infrastructure.",
+      expertise: ["System Architecture", "Blockchain Technology", "AI Integration"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "christos@brainhub.ltd"
+      }
     },
     {
-      name: "David Park",
-      role: "Blockchain Engineer",
+      name: "Stavros Mariannis",
+      role: "Legal Advisor",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-      bio: "Smart contract specialist with deep knowledge of DeFi protocols and cross-chain interoperability solutions.",
-      expertise: ["Smart Contracts", "DeFi", "Cross-Chain"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "david@brainhub.ltd"
-              }
+      bio: "Legal expert specializing in blockchain regulations and compliance. Ensures our solutions meet all regulatory requirements.",
+      expertise: ["Blockchain Law", "Compliance", "Regulatory Affairs"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "stavros@brainhub.ltd"
+      }
     },
     {
-      name: "Lisa Wang",
-      role: "AI Research Scientist",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
-      bio: "Research scientist focused on AI agent development and blockchain consensus mechanisms. Published in top-tier AI conferences.",
-      expertise: ["AI Agents", "Consensus Mechanisms", "Research"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "lisa@brainhub.ltd"
-              }
+      name: "Demos Petropoulos",
+      role: "Professor / Business - Economics",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      bio: "Academic expert in economics and business strategy. Provides strategic guidance on economic models and business development.",
+      expertise: ["Economics", "Business Strategy", "Academic Research"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "demos@brainhub.ltd"
+      }
     },
     {
-      name: "James Wilson",
-      role: "Product Manager",
+      name: "Antonis",
+      role: "Business Expert",
       image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=face",
-      bio: "Product strategist with experience in fintech and Web3. Bridges the gap between complex technology and user experience.",
-      expertise: ["Product Strategy", "Web3 UX", "Fintech"],
-              social: {
-                linkedin: "#",
-                twitter: "#",
-                email: "james@brainhub.ltd"
-              }
+      bio: "Business development specialist with extensive experience in technology commercialization and market expansion strategies.",
+      expertise: ["Business Development", "Market Strategy", "Commercialization"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "antonis@brainhub.ltd"
+      }
+    },
+    {
+      name: "Katerina Hadjistavri",
+      role: "Researcher / Legal",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      bio: "Research specialist with dual expertise in legal frameworks and blockchain technology. Bridges the gap between law and innovation.",
+      expertise: ["Legal Research", "Blockchain Research", "Compliance"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "katerina@brainhub.ltd"
+      }
+    },
+    {
+      name: "Angelo Christopher Agathangelou",
+      role: "Software Engineer",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      bio: "Full-stack developer with expertise in blockchain applications and smart contract development. Builds robust and scalable solutions.",
+      expertise: ["Smart Contracts", "Full-Stack Development", "Blockchain Apps"],
+      social: {
+        linkedin: "#",
+        twitter: "#",
+        email: "angelo@brainhub.ltd"
+      }
     }
   ];
 
@@ -101,8 +101,8 @@ const Team = () => {
             <span className="gradient-primary bg-clip-text text-transparent"> Team</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our world-class team combines cutting-edge AI research with deep blockchain expertise 
-            to build the future of decentralized technology.
+            Our experienced team combines technical expertise with business knowledge, legal compliance, 
+            and academic research to build practical blockchain solutions.
           </p>
         </div>
 
@@ -191,8 +191,8 @@ const Team = () => {
                 <div className="text-muted-foreground">Headquarters</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">7+</div>
-                <div className="text-muted-foreground">Global Team</div>
+                <div className="text-3xl font-bold text-primary mb-2">7</div>
+                <div className="text-muted-foreground">Team Members</div>
               </div>
             </div>
           </div>
